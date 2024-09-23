@@ -1,8 +1,27 @@
 version: '3'
+
 services:
-  web:
-    image: my-nginx-container
+  website1:
+    image: my-first-nginx-container
     ports:
       - "8080:80"
-    deploy:
-      replicas: 5
+
+  website2:
+    image: my-second-nginx-container
+    ports:
+      - "8081:80"
+
+  website3:
+    image: my-third-nginx-container
+    ports:
+      - "8082:80"
+
+  website4:
+    image: my-fourth-nginx-container
+    ports:
+      - "8083:80"
+
+  website5:
+    image: my-fifth-nginx-container
+    ports:
+      - "8085:80"
